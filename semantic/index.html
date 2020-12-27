@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NakBook</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <script src="dist/semantic.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="ui centered padded grid">
+        <div class="row">
+            <div class="sixteen wide mobile ten wide tablet eight wide computer column" id="logo">
+                <div class="ui container">
+                    <img class="ui centered tiny medium circular image" src="assets/image1.jpg"/>
+                    <h4 class="ui centered header">NAKBOOK</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sixteen wide mobile ten wide tablet eight wide computer column">
+                <div class="ui container" id ="form-container">
+                    <form class="ui form" id="book-form">
+                        <h4 class="ui dividing header">Booking Details</h4>
+                        <div class="field">
+                            <div class="ui input left icon">
+                                <i class="user friends icon"></i>
+                                <input type="text" id="full-name" placeholder="Full Name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui input left icon">
+                                <i class="phone icon"></i>
+                                <input type="text" id="phone-no" placeholder="Phone No" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui input left icon">
+                                <i class="home icon"></i>
+                                <input type="text" id="address" placeholder="Address" required>
+                            </div>
+                        </div>
+                        <div class="two fields">
+                            <div class="field">
+                              <div class="ui calendar" id="date_calendar">
+                                  <div class="ui input left icon">
+                                      <i class="calendar icon"></i>
+                                      <input type="text" placeholder="Pick up a date" id="date" required>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui calendar" id="time_calendar">
+                                    <div class="ui input left icon">
+                                        <i class="time icon"></i>
+                                        <input type="text" placeholder="Pick up a time" id="time" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui selection dropdown">
+                                <input type="hidden" id="service" required>
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Pick a service</div>
+                                <div class="menu">
+                                    <div class="item" data-value="Nikah">Nikah</div>
+                                    <div class="item" data-value="Wedding">Wedding</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" id="notes" placeholder="Notes">
+                        </div>
+                        <div class="row">
+                            <button class="fluid large ui whatsapp button">
+                                <i class="whatsapp icon"></i>
+                                Book with Whatsapp
+                            </button>
+                          </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
