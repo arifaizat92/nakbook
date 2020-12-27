@@ -25,8 +25,8 @@ bookForm.addEventListener('submit', (event) => {
 function send2Whatsapp(data) {
     const url = 'https://api.whatsapp.com/send?';
     const bizPhone = 'phone=' + '60193134634';
-    const text = 'text=' + 'Name:' + data.name + "\n" + "Date:"
-        + data.date + data.time + "\n" + "Service:" + data.service;
+    const text = 'text=' + 'Name:' + data.name + "%0a" + "Date:"
+        + data.date + ", " + data.time + "%0a" + "Service:" + data.service;
 
     const query = url + bizPhone + "&" + text;
     return window.open (query, '_blank');
