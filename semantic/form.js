@@ -10,8 +10,8 @@ bookForm.addEventListener('submit', (event) => {
         address : bookForm['address'].value,
         date : bookForm['date'].value,
         time : bookForm['time'].value,
-        service : bookForm['service'].value,
-        notes : bookForm['notes'].value,
+        service : bookForm['service'].value
+        // notes : bookForm['notes'].value,
     };
 
     send2Whatsapp(data);
