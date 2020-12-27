@@ -28,7 +28,7 @@ function send2Whatsapp(data) {
     const text = 'text=' + 'Name:' + data.name + "\n" + "Date:"
         + data.date + data.time + "\n" + "Service:" + data.service;
 
-    const query = url + bizPhone + text;
+    const query = url + bizPhone + "&" + text;
     return window.open (query, '_blank');
 };
 
